@@ -8,18 +8,18 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
-      <h1>Mozgasd a kamerát valaki oldalára 7</h1>
+      <h1>Mozgasd a kamerát valaki oldalára 8</h1>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers debugUIEnabled: false; -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;'>
 
 
         <a-marker type='barcode' value='7'>
-            <a-box animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" src='a.png' opacity='0.5' position='0 0.0 0' color="yellow"></a-box>
+            <a-plane animation="property: rotation; to: 360 0 0; loop: true; dur: 10000" src='a.png' opacity='0.5' position='0 0.0 0' color="yellow"></a-box>
         </a-marker>
 
         
         <a-marker type='barcode' value='6'>
-            <a-box animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" src='b.png' opacity='0.5' position='0 0 0' color="white"></a-box>
+            <a-plane animation="property: rotation; to: 360 0 0; loop: true; dur: 10000" src='b.png' opacity='0.5' position='0 0 0' color="white"></a-box>
         </a-marker>
             
             
