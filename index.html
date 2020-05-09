@@ -13,22 +13,22 @@
     <!-- overflow: hidden; -->
     <body style='margin : 0px;'>
       
-       <h1>Mozgasd a kamerát valaki oldalára v20</h1>
+       <h1>Mozgasd a kamerát valaki oldalára v21</h1>
         <a href='scene.jpg'>marker scene</a>
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_9_3;'>
+        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_9_3;'>
 
 
         <a-marker type='barcode' value='7'>
-            <a-box material="side: double" rotation="-90 0 0" animation="property: rotation; to: 270 0 0; loop: true; dur: 10000" src='a.png' opacity='0.5' position='0 0.0 0' color="yellow"></a-box>
+            <a-box material="side: double" rotation="-90 0 0" animation="property: rotation; to: -90 0 360; loop: true; dur: 10000" src='a.png' opacity='0.5' position='0 0.0 0' color="yellow"></a-box>
         </a-marker>
 
         
         <a-marker type='barcode' value='6'>
-            <a-box material="side: double" rotation="-90 0 0" animation="property: rotation; to: 270 0 0; loop: true; dur: 10000" src='b.png' opacity='0.5' position='0 0 0' color="white"></a-box>
+            <a-box material="side: double" rotation="-90 0 0" animation="property: rotation; to: -90 0 360; loop: true; dur: 10000" src='b.png' opacity='0.5' position='0 0 0' color="white"></a-box>
         </a-marker>
             
         <a-marker type='barcode' value='5'>
-            <a-gltf-model rotation="-90 0 0" opacity='0.5' animation-mixer src="sbox.gltf"></a-gltf-model>
+            <a-gltf-model rotation="-90 0 0" animation-mixer src="sbox.gltf"></a-gltf-model>
         </a-marker>
             
         <a-entity camera></a-entity>
